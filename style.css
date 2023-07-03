@@ -19,6 +19,7 @@ body{
 }
 
 .image-section{
+    background-color: #b0a96e;
     background-image: url('/assets/ian-dziuk-M382cZGGIzA-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
