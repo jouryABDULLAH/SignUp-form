@@ -123,9 +123,37 @@ button{
     border: 1px solid #cf3737;
 }
 
-input:invalid{
-    border: 1px red solid;
+.input input[type='tel'] + span,
+.input input[type='email'] + span{
+    position: relative;
 }
+
+.input input[type='tel'] + span::before,
+.input input[type='email'] + span::before{
+    position: absolute;
+}
+
+.input input[type='tel']:invalid + span::before{
+    content: '*Enter a valid number';
+    display: block;
+    color:#cf3737;
+    font-size: 13px;
+}
+
+.input input[type='email']:invalid + span::before{
+    content: '*Enter a valid email';
+    display: block;
+    color:#cf3737;
+    font-size: 13px;
+}
+
+/* 
+input[type = "tel"]:invalid + span{
+    display: block;
+    content: 'Enter a valid number';
+    color: #cf3737;
+    font-size: 12px;
+} */
 
 .unmatch{
     color: #cf3737;
