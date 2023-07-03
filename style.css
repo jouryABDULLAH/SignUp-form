@@ -97,7 +97,7 @@ button{
 .inputs{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
 }
 
 .input{
@@ -118,6 +118,10 @@ button{
     border: 1px solid gray;
 }
 
+.input input:invalid{
+    border: 1px solid #cf3737;
+}
+
 input:invalid{
     border: 1px red solid;
 }
@@ -134,14 +138,15 @@ button{
 
 footer{
     color: white;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer h5{
     color: white;
     position: absolute;
-    bottom: 15px;
-    left: 75px;
+    bottom: 15px;    
 }
 
 footer a{
